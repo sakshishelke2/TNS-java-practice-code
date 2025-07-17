@@ -2,7 +2,7 @@ package com.daythree.ScannerClass;
 
 public class MethodsDemo {
 
-	public static void main(String[] args) {
+	
 		int m=10; // instance variable
 		  int n=20;
 		  

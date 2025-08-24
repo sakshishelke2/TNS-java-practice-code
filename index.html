@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony - Music Player</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player-container">
+    <!-- Project Title -->
+    <h1 class="project-title">Harmony</h1>
+
+    <!-- Now Playing -->
+    <div class="now-playing">
+      <div class="album-container">
+        <img src="songs/song1.jpg" alt="Album Art" id="album-art">
+      </div>
+      <div class="song-info">
+        <h2 id="song-title">Song Title</h2>
+        <p id="song-artist">Artist</p>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="prev" class="control-btn">&#9664;&#9664;</button>
+      <button id="play" class="control-btn">&#9654;</button>
+      <button id="next" class="control-btn">&#9654;&#9654;</button>
+      <button id="shuffle" class="control-btn">🔀</button>
+      <button id="repeat" class="control-btn">🔁</button>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="seek-bar" value="0">
+      <span id="total-duration">0:00</span>
+    </div>
+
+    <!-- Volume -->
+    <div class="volume-container">
+      <span>🔊</span>
+      <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <!-- Search -->
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search songs...">
+      <button id="voice-search">🎤</button>
+    </div>
+
+    <!-- Playlist -->
+    <div class="playlist" id="playlist">
+      <h3>Playlist</h3>
+      <ul></ul>
+    </div>
+
+    <!-- Recently Played -->
+    <div class="recently-played" id="recently-played">
+      <h3>Recently Played</h3>
+      <ul></ul>
+    </div>
+
+    <!-- Favorites -->
+    <div class="favorites" id="favorites">
+      <h3>Favorites</h3>
+      <ul></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
